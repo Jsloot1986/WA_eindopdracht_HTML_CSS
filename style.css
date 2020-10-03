@@ -1,0 +1,165 @@
+/*site instellingen*/
+body{
+    background-color: orange;
+    font-family: 'David Libre', serif;
+    color: white;
+    font-size: 17px;
+}
+.grid-container{
+    display: grid;
+    height: 1500px;
+    grid-template-columns: 1fr 10px 1fr;
+    grid-template-rows:  150px 50px 1fr 675px 50px;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "aside aside aside"
+    "footer footer footer";
+    grid-gap: 5px;
+}
+/*header*/
+header{
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    grid-area: header;
+}
+i{
+    margin: 0;
+    padding: 0;
+}
+/*navigatie*/
+nav{
+    grid-area: nav;
+}
+.flex-container{
+    display: flex;
+    height: 50px;
+    border: 1px solid white;
+    background-color:black;
+    flex-wrap: row wrap;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color: white;
+    border: white 3px solid;
+    margin: auto;
+    padding: 2px 4px;
+}
+nav a:hover{
+    background-color: orange;
+    border: 2px solid white;
+}
+/*main*/
+main{
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    grid-area: main;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    border: 2px ridge grey;   
+}
+iframe{
+    max-width:100%;
+    height: auto;
+}
+input{
+    max-width: 100%;
+    margin: 10px;
+    padding: 10px 20px;
+}
+select {
+    max-width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+  }
+  figure {
+    border: 1px #cccccc solid;
+    padding: 4px;
+    margin: auto;
+  }
+  
+  figcaption {
+    background-color:orange;
+    color: white;
+    padding: 2px;
+    text-align: center;
+  }
+/*aside*/
+aside{
+    border: 2px dotted black;
+    text-align: center;
+    grid-area: aside;
+}
+.button{
+    background-color: black;
+    border: 1px solid white;
+    color: orange;
+    padding: 16px 32px;
+    margin: 10px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+}
+.button:hover{
+    background-color: orange;
+    color: white;
+}
+/*footer*/
+footer{
+    background-image: url(img/Foto\ met\ volleyballen.jpeg);
+    background-size: 50px;
+    text-align:center;
+    grid-area: footer;
+}
+@media (min-width: 700px){
+body{
+    font-size: 15px;
+}
+h3{
+    font-size: 20px;
+}
+.grid-container{
+        display: grid;
+        height: 1000px;
+        grid-template-columns: 1fr 10px 200px;
+        grid-template-rows:  150px 50px 1fr 50px;
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "main main aside"
+        "footer footer footer";
+        grid-gap: 5px;
+    }   
+}
+@media (min-width: 1024px){
+body{
+    font-size: 15px;
+}
+h3{
+    font-size: 18px;
+}
+.grid-container{
+        display: grid;
+        height: 1000px;
+        grid-template-columns: 150px 1fr 200px;
+        grid-template-rows:  150px 175px  1fr 50px;
+        grid-template-areas: 
+        "header header header"
+        "nav nav aside"
+        "main main aside"
+        "footer footer footer";
+        grid-gap: 5px;
+    } 
+}

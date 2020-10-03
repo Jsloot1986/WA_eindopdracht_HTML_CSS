@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laat jou mening horen over volleybal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=David+Libre&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+<!-----------------------------header------------------------------------------>    
+   <div class="grid-container">
+    <header>
+        <h1>Laat je mening horen over</h1><h1>v<i class="fas fa-volleyball-ball"></i>lleybal!</h1>
+    </header>
+<!-----------------------------navigatie------------------------------------------>
+    <nav>
+        <div class="flex-container">
+        <p><a href="/index.html">Home</a></p>
+        <p><a href="/history.html">Gechiedenis</a></p>
+        <p><a href="/rules.html">Regels</a></p>
+        <p><a href="/contact.html">Contact</a></p>
+        </div>
+    </nav>
+<!-----------------------------main------------------------------------------>
+    <main>
+        <h3>Laat je mening horen!</h3>
+        <p>Vul onderstaande enquete in en laat je mening horen!<br>
+            De gegevens worden gebruikt voor ons onderzoek over volleybal!       
+        </p>
+        <figure>
+        <img src="/img/66562-8eb1e6c3e18ee14ff1d5eb6462921b73-0a8277afa98c14531d0049588f8a33e4.jpg" alt="opslag volleybal">
+        <figcaption>Serveren van de bal bij volleybal met een sprongopslag</figcaption>
+        </figure>
+        <form name="enquete" method="POST" data-netlify="true">
+            <p>
+              <label>Naam: <input type="text" name="name" /></label>   
+            </p>
+            <p>
+                <label for="birthday">Geboorte datum:</label>
+                <input type="date" id="birthday" name="birthday">
+            </p>
+            <p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Man</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Vrouw</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Anders</label>
+            </p>
+            <p>
+              <label>E-mail: <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Positie in veld bij volleybal:</p> 
+                <select id= "role[]"name="role[]">
+                <option value="setter">setter</option>
+                <option value="diagonal">diagonal</option>
+                <option value="outsider">buiten-speler</option>
+                <option value="midplayer">mid-speler</option>
+              </select></label>
+            <p>Welke positie zou je nog meer willen spelen naast je huidige?</p>
+                <input type="checkbox" id="playvolley1" name="playvolley1" value="setter">
+                <label for="playvolley1"> setter</label><br>
+                <input type="checkbox" id="playvolley2" name="playvolley2" value="diagonal">
+                <label for="playvolley2"> diagonal</label><br>
+                <input type="checkbox" id="playvolley3" name="playvolley3" value="midplayer">
+                <label for="playvolley3"> mid-speler</label><br>
+                <input type="checkbox" id="playvolley4" name="playvolley4" value="outsider">
+                <label for="playvolley4"> buiten-speler</label>
+            <P>Ik speel al ....jaar volleybal:<br>
+                1--------------------------------50 jaar</p>
+                <label for="vol"></label>
+                <input type="range" id="vol" name="vol" min="0" max="50">
+            <p>
+              <label>Wat vind jij het leukste aan volleybal?</p> 
+              <textarea name="message" rows="10" cols="20"></textarea></label>
+              <p>
+              <label>Wat vind jij het minst leuke aan volleybal?</p> 
+              <textarea name="message" rows="10" cols="20"></textarea></label><br>
+            
+            
+              <button type="submit">Versturen</button>
+              <input type="reset">
+        </form>
+    </main>
+<!-----------------------------aside------------------------------------------>
+    <aside>
+        <h3>Handige links</h3>
+        <p><a class="button" href="http://www.volleybalmasterz.nl" target="_blank">volleybal masterz:<br> Alles over regels en het behalen van je diploma</a></p>
+        <p><a class="button" href="http://www.volleybal.nl" target="_blank">Nevobo:<br>Alles over volleybal volgens de NEVOBO</a></p>
+        <p><a class="button" href="http://www.nevobo.nl" target="_blank">Wedstrijden volleybal:<br>Zie hier wanneer er wedstrijden zijn</a></p>
+        <img class="nevobo" src="/img/nevobo.jpg" alt="logo nevobo">
+    </aside>
+<!-----------------------------footer------------------------------------------>  
+<footer>
+        <p>Copyright Jochum Sloot 2020</p>
+    </footer>
+    </div>
+</body>
+</html>
